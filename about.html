@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> University website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="/assets/logo-01.png"></a>
+            <div class="nav-links" id="navLinks">
+                
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Course</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+                
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About us</h1>
+        
+    </section>
+     <!-----About us content-----> 
+     <section class="about-us">
+         <div class="about-col">
+             <h1>We are the world greatest University</h1>
+             <p>Pellentesque venenatis elit ipsum, et tempor lacus accumsan sit amet. Nunc mattis ac sem at venenatis. Phasellus varius, justo ac interdum hendrerit, nunc quam pellentesque nisl, nec scelerisque dui urna in neque. Ut maximus nisi id vulputate consectetur. Aenean pellentesque cursus odio vitae scelerisque.
+                Etiam sagittis porttitor lacus, nec scelerisque eros vestibulum id. Nam mauris nibh, tincidunt in nulla a, pulvinar interdum sem. Vestibulum malesuada facilisis nulla. Ut laoreet orci nisi, ac sagittis turpis dictum in. Nunc et risus sit amet quam cursus vulputate quis eget sem. Aliquam a neque vitae ex porttitor dictum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas et velit nec enim vehicula ullamcorper eget vel nibh. Ut et sagittis est, lacinia molestie lacus. Fusce rutrum mauris a 
+                rhoncus vestibulum. Vivamus ac tempor magna, non vehicula purus.</p>
+                <a href="" class="hero-btn red-btn">Explore now</a>
+
+         </div>
+         <div class="about-col">
+             <img src="./assets/aboutImg.jpg">
+             
+        </div>
+     </section>
+
+ 
+   
+       
+ <!-----Footer-----> 
+ <section class="footer">
+     <h3>About us</h3>
+     <p>Pellentesque commodo felis sed nisi tristique euismod non nec ante.<br> Donec ullamcorper neque leo, nec cursus ex elementum id.</p>
+     <div class="icons">
+        <img src="https://img.icons8.com/material-outlined/24/000000/facebook.png"/>
+        <img src="https://img.icons8.com/material-outlined/24/000000/twitter.png"/>
+        <img src="https://img.icons8.com/material-outlined/24/000000/instagram-new--v1.png"/>
+        <img src="https://img.icons8.com/material-outlined/24/000000/linkedin--v1.png"/>
+     </div>
+ </section>
+
+
+
+
+
+
+
+ <!-----Java script----->   
+<script>
+    var navaLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0"
+    }
+    function hideMenu(){
+        navLinks.style.right = "-300px"
+    }
+</script>
+</body>
+
+</html>
