@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+      integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="/assets/logo-01.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Course</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h2>Our certificate and online programs for 2021</h2>
+    </section>
+    <!-----Blog page content----->
+    <section class="blog-content">
+      <div class="blog-left">
+        <img src="./assets/certificate.jpg" />
+        <h3>Our certificate and online programs for 2021</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+          scelerisque commodo cursus. Nulla a odio ex. Maecenas in hendrerit
+          magna. Suspendisse rhoncus ante et lorem egestas scelerisque. Praesent
+          condimentum libero odio, feugiat congue urna auctor nec. Donec
+          vulputate et metus id tempor. Ut vitae aliquam purus. Praesent sed
+          tempus eros. Ut id velit sit amet erat molestie placerat et in ante.
+          Cras gravida varius sollicitudin.
+        </p>
+        <br />
+        <p>
+          Donec suscipit urna vel nisl malesuada laoreet. Phasellus iaculis orci
+          sapien, eget scelerisque nisi blandit nec. Morbi vitae feugiat purus,
+          vel malesuada leo. Nam molestie maximus elementum. Morbi dui massa,
+          tincidunt in porta non, laoreet eget lectus. Proin non odio sapien.
+          Proin pellentesque arcu ut est viverra rutrum. Donec varius ultricies
+          risus, eu egestas urna ultricies tincidunt. Aliquam eu tortor et felis
+          venenatis mattis nec at dui. Suspendisse potenti. Nullam a bibendum
+          massa. Pellentesque habitant morbi tristique senectus et netus et
+          malesuada fames ac turpis egestas. Nam vestibulum ipsum quam, vitae
+          luctus mauris semper vel. In laoreet blandit nulla, vel sollicitudin
+          orci posuere a. Nunc vitae lacus non enim tristique maximus.
+        </p>
+        <br />
+        <p>
+          Maecenas sit amet commodo dolor. Donec sodales dapibus tincidunt.
+          Donec mattis enim dui, at condimentum justo porttitor in. Sed ac ipsum
+          vel odio tempus tempor. In ornare blandit urna, et porta arcu tempus
+          a. Morbi dictum porttitor finibus. Mauris velit nunc, finibus nec est
+          non, sollicitudin mollis eros. Suspendisse at lorem at ante sagittis
+          suscipit quis vel dui. Donec semper nulla mauris, sed placerat dui
+          interdum sed. Quisque vel ligula in odio commodo molestie id non
+          sapien. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+          Nulla consectetur libero est, id lobortis quam ultrices eget.
+        </p>
+        <br />
+        <div class="comment-box">
+          <h3>Leave a comment</h3>
+          <form class="comment-form">
+            <input type="text" placeholder="Enter name" />
+            <input type="e-mail" placeholder="Enter e-mail" />
+            <textarea rows="5" placeholder="Your comment"></textarea>
+            <button type="submit" class="hero-btn">Leave comment</button>
+          </form>
+        </div>
+      </div>
+      <div class="blog-right">
+        <h3>Post categories</h3>
+        <div>
+          <span>Business Analytics</span>
+          <span>24</span>
+        </div>
+        <div>
+          <span>Data science</span>
+          <span>29</span>
+        </div>
+        <div>
+          <span>Machine learning</span>
+          <span>22</span>
+        </div>
+        <div>
+          <span>Computer science</span>
+          <span>27</span>
+        </div>
+        <div>
+          <span>Art and design</span>
+          <span>15</span>
+        </div>
+      </div>
+    </section>
+    <!-----Footer----->
+    <section class="footer">
+      <h3>About us</h3>
+      <p>
+        Pellentesque commodo felis sed nisi tristique euismod non nec ante.<br />
+        Donec ullamcorper neque leo, nec cursus ex elementum id.
+      </p>
+      <div class="icons">
+        <img
+          src="https://img.icons8.com/material-outlined/24/000000/facebook.png"
+        />
+        <img
+          src="https://img.icons8.com/material-outlined/24/000000/twitter.png"
+        />
+        <img
+          src="https://img.icons8.com/material-outlined/24/000000/instagram-new--v1.png"
+        />
+        <img
+          src="https://img.icons8.com/material-outlined/24/000000/linkedin--v1.png"
+        />
+      </div>
+    </section>
+
+    <!-----Java script----->
+    <script>
+      var navaLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-300px";
+      }
+    </script>
+  </body>
+</html>
